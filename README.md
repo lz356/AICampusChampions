@@ -9,6 +9,7 @@ This is an example of a text
 * Resources: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
 * www.genai.arizona.edu
 * www.github.com/UA-AI2S/AI-Champions
+* https://github.com/UA-AIFluency/CampusChampions
 
 
 <p><image src="https://github.com/lz356/AICampusChampions/blob/main/images/TensorBuild_Lab_v8%20_with%20lab%20name%20-%20Copy.png">
