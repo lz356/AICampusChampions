@@ -110,7 +110,8 @@ Data sensitivity: 1 = no confidential data; 3 = aggregated/de-identified; 5 = PI
 
 ## Task 4 — Personal AI Workflow Sketch
 
-![Personal AI workflow diagram for the research-summary task](AIWorkflow_Module3_LiangZhang.png)
+Personal AI workflow diagram for the research-summary task
+<p><image src="https://github.com/lz356/AICampusChampions/blob/main/images/AIWorkflow_Module3_LiangZhang_1.png">
 
 | Box | Contents |
 |---|---|
