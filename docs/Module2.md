@@ -249,6 +249,6 @@ Selected for my role (LLM-driven building energy research: coding, proposals, li
 ## Forum Participation
 
 - [x] Post my V1 and V4 prompts (task hidden) and ask peers what task it was and what the change reveals the model needed
-- [ ] Respond to a peer's prompt pair (answer their two questions + run their V1 in my tool and compare) *(to complete on the forum)*
+- [x] Respond to a peer's prompt pair (answer their two questions + run their V1 in my tool and compare) *(to complete on the forum)*
 
 *Discussion note (Ji et al. greatest-risk type for my context):* extrinsic factual hallucination — fabricated citations, statistics, or agency details in proposals — which I will guard against by verifying every concrete claim against a primary source before submission.
