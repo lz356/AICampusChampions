@@ -1,5 +1,5 @@
 # AI Campus Champions
-Repository for digital products for Summer 2026\
+Repository for digital products for Summer 2026
 
 ## Resources and Links
 
