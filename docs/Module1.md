@@ -163,4 +163,4 @@ A task I do regularly is drafting federal proposals (NSF/DOE). Foundation models
 ## Forum Participation
 
 - [x] Concept map posted to the Module 1 thread with a caption identifying my most-uncertain connection (Generative AI ↔ Foundation Model) and hardest-to-define node (Generative AI)
-- [ ] Respond (3–4 sentences) to a peer whose map and professional role differ from mine, with one genuine question *(to complete on the forum)*
+- [x] Respond (3–4 sentences) to a peer whose map and professional role differ from mine, with one genuine question *(to complete on the forum)*
