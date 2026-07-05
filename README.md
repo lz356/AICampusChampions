@@ -8,7 +8,8 @@ Repository for digital products for Summer 2026
 * UA AI Fluency GitHub Repo with Editable Progress Page: https://github.com/UA-AIFluency/CampusChampions
 
 ## TensorBuild Lab
-TensorBuild Lab led by Prof.Liang Zhang is hornored to be part of the AI Campus Champions cohort, and happy to contribute to future activities.
+[TensorBuild Lab](https://sites.arizona.edu/tensorbuild-lab/), led by [Prof. Liang Zhang](https://profiles.arizona.edu/person/liangzhang1), is honored to be part of the AI Campus Champions cohort.
+
 <p><image src="https://github.com/lz356/AICampusChampions/blob/main/images/TensorBuild_Lab_v8%20_with%20lab%20name%20-%20Copy.png">
 
 ***
