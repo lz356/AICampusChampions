@@ -53,20 +53,13 @@
 
 | Prompt | Tool A (Claude) — output summary | Acc | Rel | Fmt | Tool B (Gemini) — output summary | Acc | Rel | Fmt |
 |---|---|---|---|---|---|---|---|---|
-| P1 Factual | Correctly gives 2017, "Attention Is All You Need," NeurIPS 30, with a complete APA citation. | 5 | 5 | 5 | *(pending Gemini run)* | | | |
-| P2 Summarization | Faithful ~95-word plain-language summary of the InstructGPT abstract; hits the word target. | 5 | 5 | 5 | *(pending Gemini run)* | | | |
-| P3 Code | Correct function with docstring + example; handles empty list; population std ≈ 3.85 on the test list. | 5 | 5 | 5 | *(pending Gemini run)* | | | |
-| P4 Prof. writing | Warm 170-word decline, keeps door open; appropriate tone. (Coherence rated, not accuracy.) | 5 | 5 | 5 | *(pending Gemini run)* | | | |
-| P5 Balanced arg. | Two pro + two con sentences, roughly balanced in elaboration and force. | — | 5 | 5 | *(pending Gemini run)* | | | |
+| P1 Factual | Correctly gives 2017, "Attention Is All You Need," NeurIPS 30, with a complete APA citation. | 5 | 5 | 5 | Identical correct answer: 2017, correct title, full and correct APA citation. | 5 | 5 | 5 |
+| P2 Summarization | Faithful ~95-word plain-language summary of the InstructGPT abstract; hits the word target. | 5 | 5 | 5 | Faithful ~95-word lay summary; slightly conflates "fewer parameters" with "less computational power." | 4 | 5 | 5 |
+| P3 Code | Correct function with docstring + example; handles empty list; population std ≈ 3.85 on the test list. | 5 | 5 | 5 | Correct, executable; adds type hints and a `__main__` guard; uses **sample** std (`stdev`) and guards for n<2. | 5 | 5 | 5 |
+| P4 Prof. writing | Warm 170-word decline, keeps door open; appropriate tone. (Coherence rated, not accuracy.) | 5 | 5 | 5 | Warm ~180-word decline, door left open, full subject + signature block. (Coherence rated.) | 5 | 5 | 5 |
+| P5 Balanced arg. | Two pro + two con sentences, roughly balanced in elaboration and force. | — | 5 | 5 | Two pro + two con; well developed, con side leans marginally more forceful. | — | 5 | 5 |
 
-> **To run in Gemini (verbatim), then I'll score Tool B and write the synthesis:**
-> - **P1:** What year was the Transformer architecture first introduced in a peer-reviewed paper, and what was that paper's exact title? Please provide an APA citation.
-> - **P2:** Summarize the following abstract in 100 words for a non-specialist audience: [paste the Ouyang et al. 2022 InstructGPT abstract]
-> - **P3:** Write a Python function that accepts a list of numbers and returns a dictionary with keys mean, median, and standard_deviation. Include a docstring and one usage example.
-> - **P4:** Draft a professional email declining a speaking invitation due to a scheduling conflict. The tone should be warm and leave the door open for future invitations. Length: 150–200 words.
-> - **P5:** Write a two-sided argument — two sentences pro, two sentences con — on the following claim: Universities should require disclosure of all AI use in student assignments.
-
-**Comparative synthesis (3 sentences):** *To be written once both tools' outputs are logged — post-hoc rationalization is avoided by rating first.*
+**Comparative synthesis (3 sentences):** On the verifiable tasks the two tools were effectively tied — identical correct P1 citations, correct working P3 code, faithful P2 summaries, and appropriate P4/P5 outputs — which suggests that for standard professional tasks at frontier scale, prompt quality matters more than which tool is chosen. The most instructive divergence was subtle rather than about correctness: on P3 the "same" prompt produced numerically different results because Claude returned the population standard deviation while Gemini returned the sample standard deviation (and guarded against lists shorter than two) — a difference only a reader who checks the statistical assumption would catch. The clearest small quality gaps were Gemini's P2 conflation of "fewer parameters" with "less computational power" (a minor factual imprecision) and a marginally more forceful con side in both models' P5, a small window into embedded normative framing.
 
 ### Tool A (Claude) full outputs — logged verbatim
 
@@ -115,6 +108,18 @@ Liang Zhang
 
 **P5.** Pro: Requiring disclosure gives instructors an accurate picture of how work was produced, which protects the integrity of assessment and lets them calibrate feedback fairly across students. It also normalizes AI as a tool to be used transparently rather than hidden, teaching students professional habits of attribution. Con: A blanket disclosure mandate is difficult to define and enforce consistently — the line between spell-check, search, and generative assistance is blurry — and may punish honest students while missing undisclosed use. It can also chill legitimate, beneficial use and shift focus from teaching good judgment to policing a rule.
 
+### Tool B (Gemini) full outputs — logged verbatim
+
+**P1.** Transformer introduced in 2017; APA: Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., & Polosukhin, I. (2017). Attention is all you need. *Advances in Neural Information Processing Systems, 30.* (Correct and complete.)
+
+**P2.** "Large language models often generate outputs that are untruthful, harmful, or unhelpful because they aren't properly aligned with what users actually want. To fix this, researchers trained models using human feedback to follow specific instructions. By having humans rate model responses, they fine-tuned the AI to prioritize helpfulness and safety. The resulting model, InstructGPT, performs significantly better at following complex directions and reduces toxic or inaccurate answers, even though it uses much less computational power than its massive predecessors. Essentially, this process teaches the AI to be a better, safer conversational partner." (Note: "much less computational power" imprecisely restates the paper's *100× fewer parameters* point.)
+
+**P3.** Uses `statistics.stdev` (sample standard deviation) with `List`/`Dict` type hints, a docstring, and a `__main__` usage example; raises `ValueError` for lists of fewer than two elements. On `[10, 20, 30, 40, 50]` it returns mean 30.0, median 30.0, standard_deviation 15.8114 — correct for the **sample** standard deviation. (Differs from Claude's population `pstdev`; both are valid, but the numbers differ.)
+
+**P4.** Warm ~180-word decline with subject line, admiration for the organization, an "unmovable scheduling conflict," an explicit invitation to be considered for future events, and a full signature block. Tone and appropriateness comparable to Claude's.
+
+**P5.** Pro: disclosure fosters academic integrity and lets educators assess authentic skills, and sets a standardized boundary between ethical assistance and plagiarism. Con: full disclosure is practically unenforceable given unreliable AI detectors and false positives, and treating AI as a hidden violation creates an adversarial culture that discourages productive use. (Balanced; con phrasing marginally stronger.)
+
 ---
 
 ## Task 2 — Prompt Engineering Lab (Four-Iteration Refinement)
@@ -134,8 +139,8 @@ Liang Zhang
 *V2 quality: 3/5.* Improved vs. V1: replaced vague hedging with concrete activity types and active voice, and organized content along recognizable NSF Broader Impacts dimensions.
 
 **VERSION 3 — +Few-shot example (verbatim):**
-> [Example of the quality bar and structure I want — *representative example; replace with a Broader Impacts paragraph you have actually written*:]
-> "This project broadens participation and workforce readiness through three concrete channels. First, all data-driven controls software will be released open-source with tutorials, lowering the barrier for small firms and public agencies that cannot afford proprietary tools. Second, the project trains two PhD and four undergraduate researchers, with recruitment through the [program] pipeline for first-generation students. Third, findings feed a module in an existing K-12 energy-literacy partnership, reaching ~300 students annually. Outcomes are tracked via tool-download metrics, student placement, and pre/post module assessments."
+> [Example of the quality bar and structure I want:]
+> "Automating building energy modeling with large language models directly advances energy affordability and decarbonization for the communities least able to access modeling expertise. This project delivers that impact through three channels. First, the automated modeling toolkit and its evaluation benchmarks are released open-source, so small design firms, school districts, and municipal facilities teams — who cannot afford specialized energy modelers — can evaluate efficiency retrofits themselves. Second, in partnership with NREL, the project trains graduate and undergraduate researchers at the intersection of AI and building science, prioritizing recruitment of first-generation and underrepresented students into the growing clean-energy workforce. Third, the results seed an energy-literacy module reaching K-12 students across Arizona. Outcomes are tracked through tool adoption, benchmark citations, student placement, and pre/post learning assessments."
 > You are an experienced NSF PI in building science. Following the structure and specificity of the example above, write a Broader Impacts paragraph for my proposal on using large language models for building energy modeling.
 
 *V3 output (summary):* A paragraph mirroring the exemplar's "activity → target community → measurable outcome → dissemination" structure, with specific channels (open-source EnergyPlus-LLM tooling for under-resourced agencies, student training with a named recruitment pipeline, an energy-literacy outreach module) and tracked metrics.
@@ -233,7 +238,7 @@ Selected for my role (LLM-driven building energy research: coding, proposals, li
 
 | Criterion | Score (1–5) | Note |
 |---|---|---|
-| Compared two tools with a structured rubric | 4 | Tool A (Claude) complete; Tool B (Gemini) run + synthesis pending. |
+| Compared two tools with a structured rubric | 5 | Both tools scored across five prompts; comparative synthesis written. |
 | Applied zero-/few-shot/CoT to a real task | 5 | Four documented iterations on an NSF Broader Impacts paragraph. |
 | Detected and classified hallucinations via Ji et al. | 5 | All five texts audited; ~100% of key-flagged errors caught. |
 | Can explain RAG and diffusion grounding conceptually | 5 | Prior expertise; RAG mitigates but does not eliminate hallucination (Lewis et al., 2020). |
@@ -247,4 +252,3 @@ Selected for my role (LLM-driven building energy research: coding, proposals, li
 - [ ] Respond to a peer's prompt pair (answer their two questions + run their V1 in my tool and compare) *(to complete on the forum)*
 
 *Discussion note (Ji et al. greatest-risk type for my context):* extrinsic factual hallucination — fabricated citations, statistics, or agency details in proposals — which I will guard against by verifying every concrete claim against a primary source before submission.
-
