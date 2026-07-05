@@ -10,8 +10,9 @@ Repository for digital products for Summer 2026
 ## Resources and Links
 
 * AI Champions Github Repo: www.github.com/UA-AI2S/AI-Champions
-* UA AI Fluency GitHub Repo with Editable Progress Page: https://github.com/UA-AIFluency/CampusChampions
+* UA AI Fluency GitHub Repo: https://github.com/UA-AIFluency/CampusChampions
 * Writing on Github: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+* Editable Participant Page: https://github.com/UA-AI2S/AI-Champions/wiki
 
 ## TensorBuild Lab
 [TensorBuild Lab](https://sites.arizona.edu/tensorbuild-lab/), led by [Prof. Liang Zhang](https://profiles.arizona.edu/person/liangzhang1), is honored to be part of the AI Campus Champions cohort.
