@@ -2,7 +2,7 @@
 Repository for digital products for Summer 2026
 
 ## Progress Update
-* Week 1 Finished by June 21st
+* Week 1 Finished by June 21st: https://github.com/lz356/AICampusChampions/blob/main/docs/Module1.md
 * Week 2 Finished by June 28th
 * Week 3 Finished by July 5th
 * Week 4 is in progress...
