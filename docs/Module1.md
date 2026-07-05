@@ -66,7 +66,7 @@
 
 ## Task 2 — Personal Concept Map
 
-![Concept map of AI, ML, deep learning, neural networks, foundation models, LLMs, and generative AI](ConceptMap_Week1_LiangZhang.png)
+![Concept map of AI, ML, deep learning, neural networks, foundation models, LLMs, and generative AI](images/ai_concepts_concept_map.svg)
 
 ### Relationship key
 
