@@ -4,8 +4,9 @@ Repository for digital products for Summer 2026
 ## Progress Update
 * Week 1 Finished by June 21st: https://github.com/lz356/AICampusChampions/blob/main/docs/Module1.md
 * Week 2 Finished by June 28th：https://github.com/lz356/AICampusChampions/blob/main/docs/Module2.md
-* Week 3 Finished by July 5th：https://github.com/lz356/AICampusChampions/blob/main/docs/Module3.md
-* Week 4 Finished by July 18th: https://github.com/lz356/AICampusChampions/blob/main/docs/Module4.md
+* Week 3 Finished by July 05th：https://github.com/lz356/AICampusChampions/blob/main/docs/Module3.md
+* Week 4 Finished by July 11th: https://github.com/lz356/AICampusChampions/blob/main/docs/Module4.md
+* Week 5 Finished by July 18th: https://github.com/lz356/AICampusChampions/blob/main/docs/Module5.md
 
 ## Resources and Links
 
