@@ -115,7 +115,7 @@
 
 Subject: A 15-minute ask — keeping AI use in our students' research honest
 
-Dear [Colleague],
+Dear Colleague,
 
 You've probably seen a student draft recently with a confident claim or a citation that didn't hold up on a closer look — and found yourself wondering how carefully it had been checked. I've been running into the same thing, and I don't think the answer is to pretend our students aren't already using AI. They are; they're just doing it without any shared rules.
 
