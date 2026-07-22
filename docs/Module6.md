@@ -190,7 +190,7 @@ Liang
 - LLM → "Stochastic parrot" — "form-without-meaning critique [Bender et al., 2021]," complicated by emergent abilities [Wei et al., 2022].
 - Bias encoding → NIST AI RMF → Community of practice — "governance response [NIST, 2023] stewarded through an AI-Champions community of practice [Wenger et al., 2002]."
 
-*(Week 1 and Week 6 map images are exported as ConceptMap_Week1_LiangZhang.png and ConceptMap_Week6_LiangZhang.png; the Week 1 map is preserved unedited as the baseline.)*
+![Concept Map - Week 6](https://github.com/lz356/AICampusChampions/blob/main/images/ConceptMap_Week6_LiangZhang_1.png)
 
 ---
 
