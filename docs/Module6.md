@@ -154,14 +154,14 @@ Liang
 **Days 1–30 (independent, this week, existing resources):**
 - Action 1: Draft the three-session clinic outline and convert my Module 3 workflow canvas + Module 5 lab guideline into two participant handouts.
 - Action 2: Identify and list 6–8 candidate participants from my lab and one collaborating CAEM lab.
-- Collaborator: *the CAEM Graduate Program Coordinator* (insert name) — the person who knows which students to reach.
+- Collaborator: *the CAEM Graduate Program Coordinator* (Megan Letchworth) — the person who knows which students to reach.
 - Resource needed: my existing Module 3–5 artifacts; U of A GenAI access.
 - Barrier + response: *Barrier:* I over-scope it into an all-department program. *Response:* cap the pilot at ≤8 participants and one collaborating lab.
 
 **Days 31–60 (collaborative):**
 - Action 1: Meet the named co-advising faculty colleague to co-sponsor the pilot and pressure-test the outline (this is my Task 2 email in action).
 - Action 2: Confirm a room/time, send invitations, and run Session 1 with a pre-survey.
-- Collaborator: *a senior CAEM faculty colleague* (insert name) as co-sponsor.
+- Collaborator: *a senior CAEM faculty colleague* (Dominic Boccelli) as co-sponsor.
 - Resource needed: a department computer lab slot; the pre/post survey.
 - Barrier + response: *Barrier:* low sign-up from busy students. *Response:* frame it around a concrete pain (proposal/lit-review time), offer it during an existing lab-meeting slot rather than adding a new obligation.
 
