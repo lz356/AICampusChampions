@@ -2,12 +2,13 @@
 Repository for digital products for Summer 2026
 
 ## Progress Update
-* Module 1 Finished by June 21st: https://github.com/lz356/AICampusChampions/blob/main/docs/Module1.md
-* Module 2 Finished by June 28th：https://github.com/lz356/AICampusChampions/blob/main/docs/Module2.md
-* Module 3 Finished by July 05th：https://github.com/lz356/AICampusChampions/blob/main/docs/Module3.md
-* Module 4 Finished by July 11th: https://github.com/lz356/AICampusChampions/blob/main/docs/Module4.md
-* Module 5 Finished by July 18th: https://github.com/lz356/AICampusChampions/blob/main/docs/Module5.md
-* Module 6 Finished by July 21st: https://github.com/lz356/AICampusChampions/blob/main/docs/Module6.md
+* Module 1 Finished on June 21st: https://github.com/lz356/AICampusChampions/blob/main/docs/Module1.md
+* Module 2 Finished on June 28th：https://github.com/lz356/AICampusChampions/blob/main/docs/Module2.md
+* Module 3 Finished on July 05th：https://github.com/lz356/AICampusChampions/blob/main/docs/Module3.md
+* Module 4 Finished on July 11th: https://github.com/lz356/AICampusChampions/blob/main/docs/Module4.md
+* Module 5 Finished on July 18th: https://github.com/lz356/AICampusChampions/blob/main/docs/Module5.md
+* Module 6 Finished on July 21st: https://github.com/lz356/AICampusChampions/blob/main/docs/Module6.md
+* Capstone Finished on August 5th: https://github.com/lz356/AICampusChampions/tree/main/capstone
 
 ## Resources and Links
 
